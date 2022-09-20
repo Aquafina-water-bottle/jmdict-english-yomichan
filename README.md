@@ -4,8 +4,8 @@ from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictio
 created using [yomichan-import](https://github.com/FooSoft/yomichan-import).
 
 This repository exists to simply give people a more up-to-date version of this dictionary,
-because as of writing this, all of the following sources give relatively versions:
-- Matt's Yomichan video (Version not found)
+because as of writing this, all of the following sources give relatively older versions:
+- Matt's Yomichan video (Exact version not found, but likely before 2021)
 - TMW (2021-01-01)
 - Yomichan README (2021-01-01)
 
