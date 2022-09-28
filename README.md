@@ -14,6 +14,10 @@ all of the following sources provide relatively older versions of JMdict:
 - TMW's Google Drive folder (2021-01-01)
 - Yomichan README (2021-01-01)
 
+> **Note**
+>
+> In the future, I plan on writing something to re-compile the dictionary daily / weekly.
+
 To see your current version of `JMdict (English)`,
 hover over this entry:
 > ＪＭｄｉｃｔ
