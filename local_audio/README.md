@@ -62,6 +62,8 @@ a working internet connection.
     - **Option 1**: [SQL-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/sql/localaudio_2022_06_09_sqlite.ankiaddon?raw=true) (highly recommended)
     - **Option 2**: [Memory-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/07/localaudio_v07.ankiaddon?raw=true)
 
+    If you are interested, here are the differences between the two versions:
+
     <details> <summary>Comparing Memory-based VS SQL-based versions <i>(click here)</i></summary>
 
     The SQL-based version stores the map in a local database file on your computer.
@@ -98,9 +100,9 @@ a working internet connection.
     They can be found at this [torrent link](https://nyaa.si/view/1544279).
 
     <details> <summary>Magnet link <i>(click here)</i></summary>
-    ```
-    magnet:?xt=urn:btih:71a2b5107e90f69e0c4cb19187d6a1e2f7b3404f&dn=local_audio.7z&tr=http%3a%2f%2fanidex.moe%3a6969%2fannounce&tr=http%3a%2f%2fnyaa.tracker.wf%3a7777%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.stealth.si%3a80%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.tiny-vps.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451&tr=udp%3a%2f%2ftracker.moeking.me%3a6969%2fannounce
-    ```
+
+        magnet:?xt=urn:btih:71a2b5107e90f69e0c4cb19187d6a1e2f7b3404f&dn=local_audio.7z&tr=http%3a%2f%2fanidex.moe%3a6969%2fannounce&tr=http%3a%2f%2fnyaa.tracker.wf%3a7777%2fannounce&tr=udp%3a%2f%2ftracker.coppersurfer.tk%3a6969%2fannounce&tr=udp%3a%2f%2fexodus.desync.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.opentrackr.org%3a1337%2fannounce&tr=udp%3a%2f%2fopen.stealth.si%3a80%2fannounce&tr=udp%3a%2f%2ftracker.leechers-paradise.org%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.tiny-vps.com%3a6969%2fannounce&tr=udp%3a%2f%2ftracker.torrent.eu.org%3a451&tr=udp%3a%2f%2ftracker.moeking.me%3a6969%2fannounce
+
     </details>
 
 1. Place the audio files under `Anki2/addons21/955441350/user_files`.
@@ -108,20 +110,20 @@ a working internet connection.
     on instructions to find your `Anki2` folder.
 
     <details> <summary>Expected file structure <i>(click here)</i></summary>
-    ```
-    user_files
-    ├── jpod_alternate_files
-    │   └── よむ - 読む.mp3
-    │   └── ...
-    ├── jpod_files
-    │   └── よむ - 読む.mp3
-    │   └── ...
-    └── nhk16_files
-        ├── audio
-        │   └── 20170616125910.aac
+
+        user_files
+        ├── jpod_alternate_files
+        │   └── よむ - 読む.mp3
         │   └── ...
-        └── entries.json
-    ```
+        ├── jpod_files
+        │   └── よむ - 読む.mp3
+        │   └── ...
+        └── nhk16_files
+            ├── audio
+            │   └── 20170616125910.aac
+            │   └── ...
+            └── entries.json
+
     </summary>
 
 1. In Yomichan Settings, go to:
