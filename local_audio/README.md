@@ -12,6 +12,13 @@ a working internet connection.
 > Much of the info was taken from the above link.
 
 
+> **Warning**
+>
+> I did NOT make these plugins, and cannot provide detailed support for when things go wrong.
+> Credits are given in the respective folders.
+
+
+
 <details>
 <summary>Advantages and Disadvantages of using this setup <i>(click here)</i></summary>
 
