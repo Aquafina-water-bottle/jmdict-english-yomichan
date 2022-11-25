@@ -157,23 +157,22 @@ a working internet connection.
 <a href="https://learnjapanese.moe/join/">TMW server</a>
 </sup>
 
-
-Zetta — 16/02/2022 <br>
-Yomichan Local Audio Server Anki Plugin V0.1 (probably buggy) This plugin acts similar to the Forvo Audio Server plugin but runs off the downloaded JapanesePod audio files. The purpose is to provide offline access and faster look ups for audio that exists in the dump.
-
-Any audio files with the format of `<reading> - <term>.mp3` under the plugins `user_files` directory will be used. Folder structure under `user_files` doesn’t matter. For example `よむ - 読む.mp3` it will try to match the yomichan entry to both reading and term and show up as `Local (Exact)` Failing that, it will just use `reading` and show up as `Local (Reading)` in the yomichan audio dropdown.
-
-How to use:
-
-1. Install the attached addon like any other local addon.
-1. Restart Anki
-1. Allow network connections (required since this is a local server)
-1. In yomichan settings, go to Audio > Configure Audio Playback Sources > Custom Audio Source
-1. Select Type as JSON and set URL to `http://localhost:5050/?term={term}&reading={reading}`
-1. Download the JapansePod Audio dump from here https://discord.com/channels/617136488840429598/778430038159655012/943679275884740608 and unzip all archives it in your Anki2 folder under `addons21/955441350/user_files`
-1. (You may need to Restart Anki again if it doesn’t start working.)
-
-Bugfix for multiple files named the same in different directories under user_files. https://discord.com/channels/617136488840429598/778430038159655012/943876430746513429 <br>
-Credit: Much of the code was ripped from https://github.com/jamesnicolas/yomichan-forvo-server
+> Zetta — 16/02/2022 <br>
+> Yomichan Local Audio Server Anki Plugin V0.1 (probably buggy) This plugin acts similar to the Forvo Audio Server plugin but runs off the downloaded JapanesePod audio files. The purpose is to provide offline access and faster look ups for audio that exists in the dump.
+> 
+> Any audio files with the format of `<reading> - <term>.mp3` under the plugins `user_files` directory will be used. Folder structure under `user_files` doesn’t matter. For example `よむ - 読む.mp3` it will try to match the yomichan entry to both reading and term and show up as `Local (Exact)` Failing that, it will just use `reading` and show up as `Local (Reading)` in the yomichan audio dropdown.
+> 
+> How to use:
+> 
+> 1. Install the attached addon like any other local addon.
+> 1. Restart Anki
+> 1. Allow network connections (required since this is a local server)
+> 1. In yomichan settings, go to Audio > Configure Audio Playback Sources > Custom Audio Source
+> 1. Select Type as JSON and set URL to `http://localhost:5050/?term={term}&reading={reading}`
+> 1. Download the JapansePod Audio dump from here https://discord.com/channels/617136488840429598/778430038159655012/943679275884740608 and unzip all archives it in your Anki2 folder under `addons21/955441350/user_files`
+> 1. (You may need to Restart Anki again if it doesn’t start working.)
+> 
+> Bugfix for multiple files named the same in different directories under user_files. https://discord.com/channels/617136488840429598/778430038159655012/943876430746513429 <br>
+> Credit: Much of the code was ripped from https://github.com/jamesnicolas/yomichan-forvo-server
 
 
