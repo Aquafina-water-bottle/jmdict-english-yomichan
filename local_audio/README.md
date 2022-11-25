@@ -90,7 +90,7 @@ a working internet connection.
     >     which is a problem on slow computers.
     >     The SQL-based version does not hog memory.
     >
-    > - The memory-based version is slightly faster than the SQL-based version.
+    > - The memory-based version is slightly faster than the SQL-based version outside of the first card of each session.
 
     </details>
 
