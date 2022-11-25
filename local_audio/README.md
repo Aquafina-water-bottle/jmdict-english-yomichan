@@ -113,18 +113,19 @@ a working internet connection.
 
     <details> <summary>Expected file structure <i>(click here)</i></summary>
 
-        user_files
-        ├── jpod_alternate_files
-        │   └── よむ - 読む.mp3
-        │   └── ...
-        ├── jpod_files
-        │   └── よむ - 読む.mp3
-        │   └── ...
-        └── nhk16_files
-            ├── audio
-            │   └── 20170616125910.aac
+        955441350
+        └── user_files
+            ├── jpod_alternate_files
+            │   ├── よむ - 読む.mp3
             │   └── ...
-            └── entries.json
+            ├── jpod_files
+            │   ├── よむ - 読む.mp3
+            │   └── ...
+            └── nhk16_files
+                ├── audio
+                │   ├── 20170616125910.aac
+                │   └── ...
+                └── entries.json
 
     </summary>
 
