@@ -66,29 +66,31 @@ a working internet connection.
 
     <details> <summary>Comparing Memory-based VS SQL-based versions <i>(click here)</i></summary>
 
-    The SQL-based version stores the map in a local database file on your computer.
-    This version queries this database when fetching the audio.
+    <br>
 
-    The memory-based version generates and caches the map in memory.
-    This is the original version of the add-on.
-    The SQL-based version is a patch on-top of this version.
-
-    Advantages and disadvantages of each version:
-
-    - The SQL database only has to be generated once, as this database is
-        stored on the disk.
-
-        The memory-based version must regenerated its cache
-        **every time you re-open Anki**.
-        This indeed has noticable effects;
-        the cache is only regenerated when audio is fetched,
-        so the first card added after every Anki restart will take noticably longer than normal.
-
-    - The memory-based version hogs about ~250MB of memory,
-        which is a problem on slow computers.
-        The SQL-based version does not hog memory.
-
-    - The memory-based version is slightly faster than the SQL-based version.
+    > The SQL-based version stores the map in a local database file on your computer.
+    > This version queries this database when fetching the audio.
+    >
+    > The memory-based version generates and caches the map in memory.
+    > This is the original version of the add-on.
+    > The SQL-based version is a patch on-top of this version.
+    >
+    > Advantages and disadvantages of each version:
+    >
+    > - The SQL database only has to be generated once, as this database is
+    >     stored on the disk.
+    >
+    >     The memory-based version must regenerated its cache
+    >     **every time you re-open Anki**.
+    >     This indeed has noticable effects;
+    >     the cache is only regenerated when audio is fetched,
+    >     so the first card added after every Anki restart will take noticably longer than normal.
+    >
+    > - The memory-based version hogs about ~250MB of memory,
+    >     which is a problem on slow computers.
+    >     The SQL-based version does not hog memory.
+    >
+    > - The memory-based version is slightly faster than the SQL-based version.
 
     </details>
 
