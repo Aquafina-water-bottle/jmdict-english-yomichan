@@ -153,6 +153,8 @@ a working internet connection.
 
 ## Original Message
 
+<details> <summary>Original Message for v01 <i>(click here)</i></summary>
+
 <sup>
 <a href="https://discord.com/channels/617136488840429598/778430038159655012/943743205931900928">Original discord message</a>, on
 <a href="https://learnjapanese.moe/join/">TMW server</a>
@@ -176,4 +178,31 @@ a working internet connection.
 > Bugfix for multiple files named the same in different directories under user_files. https://discord.com/channels/617136488840429598/778430038159655012/943876430746513429 <br>
 > Credit: Much of the code was ripped from https://github.com/jamesnicolas/yomichan-forvo-server
 
+</details>
+
+
+<details> <summary>Original Message for v09 <i>(click here)</i></summary>
+
+<sup>
+<a href="https://discord.com/channels/617136488840429598/778430038159655012/1047979092777123950">Original discord message</a>, on
+<a href="https://learnjapanese.moe/join/">TMW server</a>
+</sup>
+
+> 猫です — 01/12/2022 <br>
+> experimental extension of the local yomichan server with forvo users akitomo, kaoring, poyotan, skent, strawberrybrown (only tested for couple of minutes on a windows machine so lets hope for the best)
+> 
+> https://mega.nz/folder/1XgGgSBZ#_rQZLbxS5EcEv68S9I_WAw
+> 
+> Follow https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/tree/master/local_audio#steps to install option 1 of the local audio addon in anki.
+> Extract localaudio_v09.zip into the main addon folder of anki (you can rename the init.py file in case you want a backup, otherwise just overwrite)
+> Extract contents of forvo_files_v09.zip to user_files/forvo_files (so that you have 5 folders named after the mentioned users)
+> Restart and reopen Anki
+> 
+> Add forvo as value to the source parameter for the playback source in yomichan: e. g. `http://localhost:5050/?sources=forvo,jpod,jpod_alternate,nhk16&term={term}&reading={reading}`
+> 
+> You can add an user parameter to modify the sort order/which users should be displayed/used (nothing found means nothing displayed for forvo): e. g. `http://localhost:5050/?sources=forvo,jpod,jpod_alternate,nhk16&term={term}&reading={reading}&user=strawberrybrown,akitomo` (in case there is no audio for strawberrybrown/akitomo but poyotan have one still nothing would be displayed)
+> 
+> Note: maybe you saw the discussion - the files for now only includes  audio files with an exact 1:1 mapping of a dictionary/marvs jpdb frequency list term to the name of the file the user uploaded. Just because you don't get audio for an user it does not mean the user has no audio on forvo. Just because you get audio it does not mean it actually matches the current word/reading (also not uncommon that people pronounce multiple readings in the same file). Maybe one day me or someone find a nice way to normalize the filenames and is in the mood to extend the script/files for better results/accuracy but for now you need to live with what you get : >
+
+</details>
 
