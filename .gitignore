@@ -1,4 +1,3 @@
-tmp/
 # Created by https://www.toptal.com/developers/gitignore/api/vim,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=vim,python
 
@@ -191,3 +190,7 @@ tags
 [._]*.un~
 
 # End of https://www.toptal.com/developers/gitignore/api/vim,python
+
+tmp/
+.python-version
+local_audio/what.py

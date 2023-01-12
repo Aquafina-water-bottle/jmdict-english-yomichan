@@ -50,6 +50,11 @@ NHK16_SOURCE_PARAM = "nhk16"
 NHK16_PATH = "nhk16_audio"
 NHK16_MEDIA_DIR = "user_files/nhk16_files"
 
+FORVO_SOURCE_PARAM = "forvo"
+FORVO_PATH = "forvo_audio"
+FORVO_MEDIA_DIR = "user_files/forvo_files"
+FORVO_DB_NAME = "forvo.db"
+
 
 def is_kana(word):
     for char in word:
@@ -79,10 +84,13 @@ def table_exists_and_has_data(table_name):
 
 
 def init_db():
+    print("Initializing database. This make take a while...")
     init_jpod_table("jpod", JPOD_MEDIA_DIR)
     init_jpod_table("jpod_alt", JPOD_ALT_MEDIA_DIR)
     init_nhk98_table()
     init_nhk16_table()
+    init_forvo_table()
+    print("Finished initializing database!")
 
 
 def init_jpod_table(table_name, media_dir):
@@ -163,6 +171,41 @@ def init_nhk16_table():
         make_nhk16_table(NHK16_MEDIA_DIR, db_file)
 
 
+def init_forvo_table():
+    if table_exists_and_has_data("forvo"):
+        return
+    drop_table_sql = "DROP TABLE IF EXISTS forvo"
+    create_table_sql = """
+       CREATE TABLE forvo (
+           id integer PRIMARY KEY,
+           expression text,
+           speaker text NOT NULL,
+           file text NOT NULL
+       );
+    """
+    sql = "INSERT INTO forvo (expression, speaker, file) VALUES (?,?,?)"
+    db_file = get_program_root_path() + "/" + DB_FILE
+    with sqlite3.connect(db_file) as conn:
+        cur = conn.cursor()
+        cur.execute(drop_table_sql)
+        cur.execute(create_table_sql)
+        start = get_program_root_path() + "/" + FORVO_MEDIA_DIR
+
+        for root, _, files in os.walk(start, topdown=False):
+            for name in files:
+                if not name.endswith('.mp3'):
+                    continue
+
+                speaker = os.path.basename(root)
+                expr = os.path.splitext(name)[0]
+                path = os.path.join(root, name)
+                relative_path = os.path.relpath(path, start)
+
+                cur.execute(sql, (expr, speaker, relative_path))
+        conn.commit()
+
+
+
 class AccentHandler(http.server.SimpleHTTPRequestHandler):
     def log_error(self, *args, **kwargs):
         """By default, SimpleHTTPRequestHandler logs to stderr.  This would
@@ -223,6 +266,34 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
                                   "url": f"http://{HOSTNAME}:{PORT}/{NHK16_PATH}/{quote(row[1])}"})
         return audio_sources
 
+    def get_forvo_sources(self, cursor: sqlite3.Cursor, term: str, users: list[str]):
+        audio_sources = []
+
+        if len(users) > 0:
+            args = [term] + users
+            # "?,?,?" for number of users
+            n_question_marks = ','.join(['?'] * len(users))
+            rows = cursor.execute(
+                f"SELECT speaker,file FROM forvo WHERE expression = ? and speaker IN ({n_question_marks}) ORDER BY speaker", (args)).fetchall()
+
+            for u in users:
+                for row in rows:
+                    found_name = row[0]
+                    if (u == found_name):
+                        audio_sources += [
+                            {"name": "forvo_" + found_name, "url": f"http://{HOSTNAME}:{PORT}/{FORVO_PATH}/{row[1]}"}]
+
+
+        else:
+            rows = cursor.execute(
+                "SELECT speaker,file FROM forvo WHERE expression = ? ORDER BY speaker", ([term])).fetchall()
+            for row in rows:
+                found_name = row[0]
+                audio_sources += [{"name": "forvo_" + found_name,
+                                   "url": f"http://{HOSTNAME}:{PORT}/{FORVO_PATH}/{row[1]}"}]
+
+        return audio_sources
+
     def get_audio(self, media_dir, path_prefix):
         audio_file = get_program_root_path() + \
             f"/{media_dir}/" + \
@@ -243,8 +314,8 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
         with open(audio_file, 'rb') as fh:
             self.wfile.write(fh.read())
 
-    def parse_query_components(self):
-        """Extract 'term', 'reading', and 'sources' query parameters"""
+    def parse_query_components(self) -> tuple[str, str, list[str], list[str]]:
+        """Extract 'term', 'reading', 'sources', and 'user' query parameters"""
         query_components = parse_qs(urlparse(self.path).query)
         term = query_components["term"][0] if "term" in query_components else ""
         if term == "":
@@ -252,8 +323,11 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
             # Still support "expression" for older versions
             term = query_components["expression"][0] if "expression" in query_components else ""
         reading = query_components["reading"][0] if "reading" in query_components else ""
-        sources = query_components["sources"][0].split(',') if "sources" in query_components else [NHK16_SOURCE_PARAM, NHK98_SOURCE_PARAM, JPOD_SOURCE_PARAM, JPOD_ALT_SOURCE_PARAM]
-        return term, reading, sources
+        sources = query_components["sources"][0].split(',') if "sources" in query_components else [NHK16_SOURCE_PARAM, NHK98_SOURCE_PARAM, JPOD_SOURCE_PARAM, JPOD_ALT_SOURCE_PARAM, FORVO_SOURCE_PARAM]
+        user = [u.strip() for u in query_components["user"][0].split(
+            ',')] if "user" in query_components else []
+
+        return term, reading, sources, user
 
     def do_GET(self):
         if self.path.startswith(f"/{JPOD_PATH}/"):
@@ -268,8 +342,11 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
         elif self.path.startswith(f"/{NHK16_PATH}/"):
             self.get_audio(NHK16_MEDIA_DIR, NHK16_PATH)
             return
+        elif self.path.startswith(f"/{FORVO_PATH}/"):
+            self.get_audio(FORVO_MEDIA_DIR, FORVO_PATH)
+            return
 
-        term, reading, sources = self.parse_query_components()
+        term, reading, sources, users = self.parse_query_components()
 
         audio_sources = []
         db_file = get_program_root_path() + "/" + DB_FILE
@@ -284,6 +361,8 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
                     audio_sources += self.get_nhk98_sources(cursor, term, reading)
                 elif source == NHK16_SOURCE_PARAM:
                     audio_sources += self.get_nhk16_sources(cursor, term, reading)
+                elif source == FORVO_SOURCE_PARAM:
+                    audio_sources += self.get_forvo_sources(cursor, term, users)
             cursor.close()
 
         # Build JSON that yomichan requires
