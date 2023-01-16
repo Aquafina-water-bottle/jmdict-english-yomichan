@@ -281,7 +281,7 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
                     found_name = row[0]
                     if (u == found_name):
                         audio_sources += [
-                            {"name": "forvo_" + found_name, "url": f"http://{HOSTNAME}:{PORT}/{FORVO_PATH}/{row[1]}"}]
+                            {"name": "Forvo: " + found_name, "url": f"http://{HOSTNAME}:{PORT}/{FORVO_PATH}/{row[1]}"}]
 
 
         else:
@@ -289,7 +289,7 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
                 "SELECT speaker,file FROM forvo WHERE expression = ? ORDER BY speaker", ([term])).fetchall()
             for row in rows:
                 found_name = row[0]
-                audio_sources += [{"name": "forvo_" + found_name,
+                audio_sources += [{"name": "Forvo: " + found_name,
                                    "url": f"http://{HOSTNAME}:{PORT}/{FORVO_PATH}/{row[1]}"}]
 
         return audio_sources
