@@ -182,7 +182,7 @@ a working internet connection.
 
 * For Forvo audio specifically, you can modify the priority of users by using `&user=`.
 
-    For example, the following will prioritize strawberrybrown and akitomo, and **will exclude all other users**:
+    For example, the following will get forvo audio in the priority of strawberrybrown, then akitomo. All other users **will not be included in the search**.
     ```
     http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}&user=strawberrybrown,akitomo
     ```
