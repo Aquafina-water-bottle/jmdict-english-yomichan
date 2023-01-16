@@ -163,6 +163,10 @@ a working internet connection.
     - After playing the audio, you should be able to see the available sources
         by right-clicking on the play button.
 
+        Here is an example for 希ガス:
+
+        ![image](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/img/kigasu.gif)
+
 
 ## Original Message
 
