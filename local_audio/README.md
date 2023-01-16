@@ -59,8 +59,8 @@ a working internet connection.
 
 1.  There are two main versions of the add-on. Download one of the two.
 
-    - **Option 1**: [SQL-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/sql_09/localaudio_sql09__2023_01_15.ankiaddon?raw=true) (highly recommended, but requires Anki 2.1.50+)
-    - **Option 2**: [Memory-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/09/localaudio_09__2023_01_15.ankiaddon?raw=true)
+    - **Option 1**: [SQL-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/sql_09/localaudio_sql09__2023_01_15.ankiaddon?raw=true) (highly recommended, but requires Anki 2.1.50+)
+    - **Option 2**: [Memory-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/09/localaudio_09__2023_01_15.ankiaddon?raw=true)
 
     If you are interested, here are the differences between the two versions:
 
