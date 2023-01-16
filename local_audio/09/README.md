@@ -4,6 +4,10 @@ that introduces support for Forvo audio.
 
 Credits to Renji-xd for getting the Forvo audio and making it work with the add-on.
 
+> **Note**: You must have the `forvo.db` file for this version of the add-on to work.
+> This file is not provided with the repository nor is it generated from the add-on.
+> If you want forvo audio support, use the sql_09 version.
+
 I did NOT make this addon.
 This is stored here for safe-keeping purposes only.
 
