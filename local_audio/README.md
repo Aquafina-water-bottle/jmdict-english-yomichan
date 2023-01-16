@@ -2,7 +2,7 @@
 # Local Audio Server for Yomichan
 
 This is a completely optional setup for people who want to be
-able to create Anki cards nearly instanteously, and without
+able to create Anki cards nearly instantaneously, and without
 a working internet connection.
 
 > **Note**
@@ -27,7 +27,7 @@ a working internet connection.
 
     1. Most audio is gotten in **less than a second**. Without the local audio server,
         fetching the audio can take anywhere from three seconds to a full minute
-        (on particularily bad days).
+        (on particularly bad days).
 
         Most of the delay from Yomichan when creating cards is from fetching the audio.
         In other words, getting the audio is the main bottleneck of when creating Anki cards.
@@ -37,17 +37,17 @@ a working internet connection.
 
 * **Disadvantages:**
 
-    1. This setup requires a little over **3GB of free space**.
+    1. This setup requires a little over **5GB of free space**.
 
     1. This setup is only available for PC. Although there have been talks to port this to Android,
-        this is not currently feasable because most users do not want to waste
-        3GB of space on their phone.
+        this is not currently feasible because most users do not want to waste
+        multiple gigabytes of space on their phone.
 
         Of course, if you're interested in porting this to work with Android, you are always free
         to contribute to [AnkiConnectAndroid](https://github.com/KamWithK/AnkiconnectAndroid)!
 
     1. It only has the coverage of jpod and nhk16
-        (which is still about 99% coverage, from personal experence).
+        (which is still about 99% coverage, from personal experience).
         To increase audio coverage,
         it would be ideal to also include an extra
         [Forvo audio source](https://learnjapanese.moe/yomichan/#bonus-adding-forvo-extra-audio-source).
@@ -168,7 +168,7 @@ a working internet connection.
 ## Usage Notes
 
 * The sources can be rearranged to give priority to a different source.
-    For example, if you want forvo to have the highest priority, use
+    For example, if you want Forvo to have the highest priority, use
     `sources=forvo,jpod,jpod_alternate,nhk16`
     (under the Custom URL step).
 
