@@ -148,9 +148,9 @@ a working internet connection.
     http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}
     ```
 
-1. (If you are using the SQL-based version)
+1. Restart Anki.
 
-    Restart Anki in order to generate the database file.
+    If you are using the SQL-based version, restarting Anki will generate the database file.
     Expect this to take a while.
 
 1. From here, you should be done! You can check that it works by playing some audio from Yomichan.
@@ -166,6 +166,8 @@ a working internet connection.
 
 
 ## Usage Notes
+
+* The local audio server only works when Anki is open. Of course, it can be running minimized in the background.
 
 * The sources can be rearranged to give priority to a different source.
     For example, if you want Forvo to have the highest priority, use
