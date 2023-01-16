@@ -55,6 +55,17 @@ a working internet connection.
 </details>
 
 
+<details> <summary>Notes on Forvo Audio Sourcing <i>(click here)</i></summary>
+
+* The following is a slightly edited quote from person who got the Forvo audio:
+
+    > The files for now only includes audio files with an exact 1:1 mapping of a dictionary/Marv's JPDB frequency list term to the name of the file the user uploaded. Just because you don't get audio for an user it does not mean the user has no audio on Forvo. Just because you get audio it does not mean it actually matches the current word/reading. It is also not uncommon that people pronounce multiple readings in the same file.
+
+    The full quote can be found at the bottom of the page, under "Original Message for v09".
+
+</details>
+
+
 ## Steps
 
 1.  There are two main versions of the add-on. Download one of the two.
@@ -188,7 +199,7 @@ a working internet connection.
     ```
 
 
-## Original Message
+## Original Messages
 
 <details> <summary>Original Message for v01 <i>(click here)</i></summary>
 
