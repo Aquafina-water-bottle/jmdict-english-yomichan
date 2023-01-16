@@ -77,6 +77,8 @@ a working internet connection.
     >
     > Advantages and disadvantages of each version:
     >
+    > - The SQL-based version only works on Anki versions 2.1.50 and above.
+    >
     > - The SQL database only has to be generated once, as this database is
     >     stored on the disk.
     >
@@ -90,7 +92,7 @@ a working internet connection.
     >     which is a problem on slow computers.
     >     The SQL-based version does not hog memory.
     >
-    > - The memory-based version is slightly faster than the SQL-based version outside of the first card of each session.
+    > - The memory-based version is slightly faster than the SQL-based version, outside of the first card of each session.
 
     </details>
 
@@ -115,6 +117,12 @@ a working internet connection.
 
         955441350
         └── user_files
+            ├── forvo_files
+            │   ├── akitomo
+            │   │   └── 目的.mp3
+            │   ├── kaoring
+            │   │   └── ...
+            │   └── ...
             ├── jpod_alternate_files
             │   ├── よむ - 読む.mp3
             │   └── ...
@@ -137,18 +145,23 @@ a working internet connection.
 
     Set the `URL` field to:
     ```
-    http://localhost:5050/?sources=jpod,jpod_alternate,nhk16&term={term}&reading={reading}
+    http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}
     ```
 
     The sources can be rearranged to give priority to a different source
-    For example, if you want nhk16 to have the highest priority, use `sources=nhk16,jpod,jpod_alternate`.
+    For example, if you want forvo to have the highest priority, use `sources=forvo,jpod,jpod_alternate,nhk16`.
 
 1. (If you are using the SQL-based version)
 
-    Generate the SQL database by scanning any word (e.g. 読む),
-    and then play the audio.
-
+    Restart Anki in order to generate the database file.
     Expect this to take a while.
+
+1. From here, you should be done! You can check that it works by playing some audio from Yomichan.
+    You should notice two things:
+
+    - The audio should be played almost immediately after clicking the play button.
+    - After playing the audio, you should be able to see the available sources
+        by right-clicking on the play button.
 
 
 ## Original Message

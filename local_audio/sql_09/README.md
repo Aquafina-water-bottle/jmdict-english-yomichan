@@ -1,9 +1,7 @@
-Modified version of the
-[Local audio server add-on](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/tree/master/local_audio/07)
-that introduces SQL support.
+Combined version of the
+[sql](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/tree/master/local_audio/sql)
+and
+[09](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/tree/master/local_audio/09)
+versions to provide full SQL support across all audio.
 
-The author that introduced SQL support does not want to be credited
-(and can no longer be contacted).
-
-I did NOT make this addon.
-This is stored here for safe-keeping purposes only.
+Modifications made by myself.
