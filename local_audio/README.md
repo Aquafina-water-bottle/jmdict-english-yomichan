@@ -113,6 +113,9 @@ a working internet connection.
     See [Anki's documentation](https://docs.ankiweb.net/files.html#file-locations)
     on instructions to find your `Anki2` folder.
 
+    Additionally, if you are using the memory-based version, place the `forvo.db` file
+    under `Anki2/addons21/955441350` (NOT under the `user_files` folder).
+
     <details> <summary>Expected file structure <i>(click here)</i></summary>
 
         955441350
@@ -135,9 +138,6 @@ a working internet connection.
                 │   ├── 20170616125910.aac
                 │   └── ...
                 └── entries.json
-
-    > **Note**: The `forvo.db` file is only required if you are using the memory-based version.
-    > This file can be found under the torrent link above.
 
     </summary>
 
