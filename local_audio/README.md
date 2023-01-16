@@ -148,9 +148,6 @@ a working internet connection.
     http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}
     ```
 
-    The sources can be rearranged to give priority to a different source
-    For example, if you want forvo to have the highest priority, use `sources=forvo,jpod,jpod_alternate,nhk16`.
-
 1. (If you are using the SQL-based version)
 
     Restart Anki in order to generate the database file.
@@ -166,6 +163,21 @@ a working internet connection.
         Here is an example for 希ガス:
 
         ![image](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/img/kigasu.gif)
+
+
+## Usage Notes
+
+* The sources can be rearranged to give priority to a different source.
+    For example, if you want forvo to have the highest priority, use
+    `sources=forvo,jpod,jpod_alternate,nhk16`
+    (under the Custom URL step).
+
+* For Forvo audio specifically, you can modify the priority of users by using `&user=`.
+
+    For example, the following will prioritize strawberrybrown and akitomo, and **will exclude all other users**:
+    ```
+    http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}&user=strawberrybrown,akitomo
+    ```
 
 
 ## Original Message
