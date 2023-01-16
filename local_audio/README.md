@@ -136,8 +136,8 @@ a working internet connection.
                 │   └── ...
                 └── entries.json
 
-    The `forvo.db` file is only required if you are using the memory-based version.
-    This file can be found under the torrent link above.
+    > **Note**: The `forvo.db` file is only required if you are using the memory-based version.
+    > This file can be found under the torrent link above.
 
     </summary>
 
