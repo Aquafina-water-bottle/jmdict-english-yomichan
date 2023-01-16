@@ -46,7 +46,7 @@ a working internet connection.
         Of course, if you're interested in porting this to work with Android, you are always free
         to contribute to [AnkiConnectAndroid](https://github.com/KamWithK/AnkiconnectAndroid)!
 
-    1. It only has the coverage of jpod and nhk16
+    1. It only has the coverage of JPod, NHK16 and select audio from Forvo
         (which is still about 99% coverage, from personal experience).
         To increase audio coverage,
         it would be ideal to also include an extra
