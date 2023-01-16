@@ -116,6 +116,7 @@ a working internet connection.
     <details> <summary>Expected file structure <i>(click here)</i></summary>
 
         955441350
+        ├── forvo.db
         └── user_files
             ├── forvo_files
             │   ├── akitomo
@@ -134,6 +135,9 @@ a working internet connection.
                 │   ├── 20170616125910.aac
                 │   └── ...
                 └── entries.json
+
+    The `forvo.db` file is only required if you are using the memory-based version.
+    This file can be found under the torrent link above.
 
     </summary>
 
