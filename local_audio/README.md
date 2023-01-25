@@ -179,7 +179,7 @@ a working internet connection.
 
         Here is an example for 読む:
 
-        ![image](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/img/yomu.gif)
+        ![image](./img/yomu.gif)
 
     Play all the sources from the above (読む) to ensure the sound is properly fetched.
 
