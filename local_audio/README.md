@@ -258,6 +258,11 @@ a working internet connection.
 
 <details> <summary>Original message for v09_sql hotfix (2023_01_15 -> 2023_01_24) <i>(click here)</i></summary>
 
+<sup>
+<a href="https://discord.com/channels/617136488840429598/778430038159655012/1067694392393093220">Original discord message</a>, on
+<a href="https://learnjapanese.moe/join/">TMW server</a>
+</sup>
+
 > Aquafina water bottle — 01/24/2023 <br>
 > Out of pure stupidity, the jpod_alternate audio files aren't actually found in the `sql_09` version. If you already have it installed, here's how to hotfix it:
 > 1. Download the new `__init__.py` file. You can find it in the zip below or at this link: https://raw.githubusercontent.com/Aquafina-water-bottle/jmdict-english-yomichan/master/local_audio/sql_09/__init__.py
