@@ -5,17 +5,9 @@ This is a completely optional setup for people who want to be
 able to create Anki cards nearly instantaneously, and without
 a working internet connection.
 
-> **Note**
->
-> This is an updated version of
-> [TMW's guide](https://github.com/shoui520/shoui520.github.io/blob/15d8a1c361fd02354483a66761ad34eb56c90f2e/docs/yomichan.md#offline-audio-server).
-> Much of the info was originally taken from here.
-
-
-> **Warning**
->
+> **Warning**:
 > I did NOT make these plugins, and cannot provide detailed support for when things go wrong.
-> Credits are given in the respective folders.
+> Credits are given in the respective folders, and at the bottom of this guide.
 
 
 
@@ -199,6 +191,15 @@ a working internet connection.
     ```
     http://localhost:5050/?sources=jpod,jpod_alternate,nhk16,forvo&term={term}&reading={reading}&user=strawberrybrown,akitomo
     ```
+
+## Credits
+* **`Zetta#3033`**: Creator of the original addon
+* **`kezi#0001`**: Getting NHK16 audio
+* **`(anonymous)`**: Adding SQL + NHK16 audio support
+* **`Renji-xD#8182`**: Getting Forvo audio + Adding Forvo audio support
+* **`Marv#5144`**: Creating and maintaining the torrent
+* **`shoui 🐈#0520`**: Maintaining the original set of instructions that these instructions were initially based off of.
+* **`Aquafina water bottle#3026`**: Combining the Forvo + SQL versions + Maintaining these instructions
 
 
 ## Original Messages
