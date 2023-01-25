@@ -8,8 +8,8 @@ a working internet connection.
 > **Note**
 >
 > This is an updated version of
-> [TMW's guide](https://learnjapanese.moe/yomichan/#offline-audio-server).
-> Much of the info was taken from the above link.
+> [TMW's guide](https://github.com/shoui520/shoui520.github.io/blob/15d8a1c361fd02354483a66761ad34eb56c90f2e/docs/yomichan.md#offline-audio-server).
+> Much of the info was originally taken from here.
 
 
 > **Warning**
