@@ -70,7 +70,7 @@ a working internet connection.
 
 1.  There are two main versions of the add-on. Download one of the two.
 
-    - **Option 1**: [SQL-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/sql_09/localaudio_sql09__2023_01_15.ankiaddon?raw=true) (highly recommended, but requires Anki 2.1.50+)
+    - **Option 1**: [SQL-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/sql_09/localaudio_sql09__2023_01_24.ankiaddon?raw=true) (highly recommended, but requires Anki 2.1.50+)
     - **Option 2**: [Memory-based](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/master/local_audio/09/localaudio_09__2023_01_15.ankiaddon?raw=true)
 
     If you are interested, here are the differences between the two versions:
@@ -168,7 +168,7 @@ a working internet connection.
     If you are using the SQL-based version, restarting Anki will generate the database file.
     Expect this to take a while.
 
-1. From here, you should be done! You can check that it works by playing some audio from Yomichan.
+1. Ensure that everything works. To do this, play some audio from Yomichan.
     You should notice two things:
 
     - The audio should be played almost immediately after clicking the play button.
@@ -177,9 +177,11 @@ a working internet connection.
     - After playing the audio, you should be able to see the available sources
         by right-clicking on the play button.
 
-        Here is an example for 希ガス:
+        Here is an example for 読む:
 
-        ![image](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/img/kigasu.gif)
+        ![image](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/blob/sql_09/local_audio/img/yomu.gif)
+
+    Play all the sources from the above (読む) to ensure the sound is properly fetched.
 
 
 ## Usage Notes

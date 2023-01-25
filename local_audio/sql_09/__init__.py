@@ -38,9 +38,9 @@ JPOD_SOURCE_PARAM = "jpod"
 JPOD_PATH = "jpod_audio"
 JPOD_MEDIA_DIR = "user_files/jpod_files"
 
-JPOD_ALT_SOURCE_PARAM = "jpod_alt"
-JPOD_ALT_PATH = "jpod_alt_audio"
-JPOD_ALT_MEDIA_DIR = "user_files/jpod_alt_files"
+JPOD_ALT_SOURCE_PARAM = "jpod_alternate"
+JPOD_ALT_PATH = "jpod_alternate_audio"
+JPOD_ALT_MEDIA_DIR = "user_files/jpod_alternate_files"
 
 NHK98_SOURCE_PARAM = "nhk98"
 NHK98_PATH = "nhk98_audio"
@@ -262,7 +262,7 @@ class AccentHandler(http.server.SimpleHTTPRequestHandler):
         """, {"expression": term, "reading": reading})
         rows = cursor.fetchall()
         for row in rows:
-            audio_sources.append({"name": row[0],
+            audio_sources.append({"name": f"NHK16 {row[0]}",
                                   "url": f"http://{HOSTNAME}:{PORT}/{NHK16_PATH}/{quote(row[1])}"})
         return audio_sources
 
