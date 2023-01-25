@@ -238,7 +238,7 @@ a working internet connection.
 <a href="https://learnjapanese.moe/join/">TMW server</a>
 </sup>
 
-> 猫です — 01/12/2022 <br>
+> 猫です — 01/12/2023 <br>
 > experimental extension of the local yomichan server with forvo users akitomo, kaoring, poyotan, skent, strawberrybrown (only tested for couple of minutes on a windows machine so lets hope for the best)
 > 
 > https://mega.nz/folder/1XgGgSBZ#_rQZLbxS5EcEv68S9I_WAw
@@ -253,6 +253,20 @@ a working internet connection.
 > You can add an user parameter to modify the sort order/which users should be displayed/used (nothing found means nothing displayed for forvo): e. g. `http://localhost:5050/?sources=forvo,jpod,jpod_alternate,nhk16&term={term}&reading={reading}&user=strawberrybrown,akitomo` (in case there is no audio for strawberrybrown/akitomo but poyotan have one still nothing would be displayed)
 > 
 > Note: maybe you saw the discussion - the files for now only includes  audio files with an exact 1:1 mapping of a dictionary/marvs jpdb frequency list term to the name of the file the user uploaded. Just because you don't get audio for an user it does not mean the user has no audio on forvo. Just because you get audio it does not mean it actually matches the current word/reading (also not uncommon that people pronounce multiple readings in the same file). Maybe one day me or someone find a nice way to normalize the filenames and is in the mood to extend the script/files for better results/accuracy but for now you need to live with what you get : >
+
+</details>
+
+<details> <summary>Original message for v09_sql hotfix (2023_01_15 -> 2023_01_24) <i>(click here)</i></summary>
+
+> Aquafina water bottle — 01/24/2023 <br>
+> Out of pure stupidity, the jpod_alternate audio files aren't actually found in the `sql_09` version. If you already have it installed, here's how to hotfix it:
+> 1. Download the new `__init__.py` file. You can find it in the zip below or at this link: https://raw.githubusercontent.com/Aquafina-water-bottle/jmdict-english-yomichan/master/local_audio/sql_09/__init__.py
+> 2. Navigate to `Anki2/addons21/955441350`
+> 3. Replace the `__init__.py` file with the one downloaded from step 1.
+> 4. Remove the `entries.db` file entirely.
+> 5. Restart Anki. You should now be able to see 読む from all 4 sources. It should look like step 7 from the standard setup instructions: <https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/tree/master/local_audio>
+> 
+> Worst case scenario, if the hotfix doesn't work, it's likely best to just re-do the setup process from scratch by deleting the addon and following the steps in the README. Make sure you save the `user_files` folder so you don't have to re-download any audio files.
 
 </details>
 
