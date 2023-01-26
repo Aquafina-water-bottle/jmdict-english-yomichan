@@ -175,6 +175,10 @@ a working internet connection.
 
     Play all the sources from the above (読む) to ensure the sound is properly fetched.
 
+    If some sources don't work (and you are using the sql version),
+    try deleting the `entries.db` file (under `Anki2/addons21/955441350/`),
+    restarting Anki, and playing the audio again.
+
 
 ## Usage Notes
 
