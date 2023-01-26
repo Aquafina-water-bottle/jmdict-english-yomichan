@@ -200,10 +200,10 @@ a working internet connection.
 * **`Zetta#3033`**: Creator of the original addon
 * **`kezi#0001`**: Getting NHK16 audio
 * **`(anonymous)`**: Adding SQL + NHK16 audio support
-* **`Renji-xD#8182`**: Getting Forvo audio + Adding Forvo audio support
+* **`Renji-xD#8182`**: Getting Forvo audio, adding Forvo audio support
 * **`Marv#5144`**: Creating and maintaining the torrent
-* **`shoui 🐈#0520`**: Maintaining the original set of instructions that these instructions were initially based off of.
-* **`Aquafina water bottle#3026`**: Combining the Forvo + SQL versions + Maintaining these instructions
+* **`shoui 🐈#0520`**: Maintaining and popularizing the original set of instructions that these instructions were initially based off of
+* **`Aquafina water bottle#3026`**: Combining the Forvo + SQL versions, maintaining these instructions
 
 
 ## Original Messages
