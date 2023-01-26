@@ -261,7 +261,7 @@ a working internet connection.
 
 </details>
 
-<details> <summary>Original message for v09_sql hotfix (2023_01_15 -> 2023_01_24) <i>(click here)</i></summary>
+<details> <summary>Original message for vsql_09 hotfix (2023_01_15 -> 2023_01_24) <i>(click here)</i></summary>
 
 <sup>
 <a href="https://discord.com/channels/617136488840429598/778430038159655012/1067694392393093220">Original discord message</a>, on
