@@ -58,7 +58,7 @@ a working internet connection.
 </details>
 
 <sup>
-P.S. Feel free to check out <a href="https://aquafina-water-bottle.github.io/jp-mining-note">my Anki note template</a> if you're interested!
+P.S. Feel free to check out <a href="https://aquafina-water-bottle.github.io/jp-mining-note/jpresources/">my other resources</a> if you're interested!
 </sup>
 
 ## Steps
