@@ -31,12 +31,9 @@ a working internet connection.
 
     1. This setup requires a little over **5GB of free space**.
 
-    1. This setup is only available for PC. Although there have been talks to port this to Android,
-        this is not currently feasible because most users do not want to waste
-        multiple gigabytes of space on their phone.
-
-        Of course, if you're interested in porting this to work with Android, you are always free
-        to contribute to [AnkiConnectAndroid](https://github.com/KamWithK/AnkiconnectAndroid)!
+    1. This setup is only available for PC.
+        However, a WIP PR is currently live on [AnkiConnectAndroid](https://github.com/KamWithK/AnkiconnectAndroid/pull/20),
+        which means it will be available on Android in the future!
 
     1. It only has the coverage of JPod, NHK16 and select audio from Forvo
         (which is still about 99% coverage, from personal experience).
