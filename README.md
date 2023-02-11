@@ -8,6 +8,14 @@ for people who don't want to compile the dictionary themselves.
 A more up-to-date version of JMdict usually provides better definitions and coverage
 compared to older versions, so I would recommend updating this dictionary every few months.
 
+There are now two versions:
+* `jmdict_english`: The default version.
+* `jmdict_english_extra`: Contains a lot of extra information not included in the default version,
+    including alternate forms and antonyms.
+    See [here](https://github.com/FooSoft/yomichan-import/pull/40) for more info.
+
+    Note that this version will take considerably longer to import compared to the default version.
+
 Additionally, as of writing this (2022/09/20),
 all of the following sources provide relatively older versions of JMdict:
 - Matt's Yomichan video (Exact version not included, but likely before 2021)
