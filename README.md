@@ -45,7 +45,7 @@ In the future, I plan on writing something to automatically re-compile this dict
       list-style-type: circle !important;
     }
     ul[data-sc-content="infoGlossary"] {
-      list-style-type: "ℹ️ " !important;
+      list-style-type: "ℹ️ " !important; /* hint: try "💬 " */
     }
     ul[data-sc-content="sourceLanguages"] {
       list-style-type: "🌐 " !important;
@@ -54,16 +54,16 @@ In the future, I plan on writing something to automatically re-compile this dict
       list-style-type: "📝 " !important;
     }
     ul[data-sc-content="antonyms"] {
-      list-style-type: "🔄 " !important; /* hint: try "↔️ " */
+      list-style-type: "🔄 " !important;
     }
     ul[data-sc-content="references"] {
       list-style-type: "➡️ " !important;
     }
     ul[data-sc-content="examples"] {
-      list-style-type: "🇯🇵 " !important; /* hint: try "⛩️ ", "👺 ", "🗾 " */
+      list-style-type: "🇯🇵 " !important; /* hint: try "⛩️ ", "👺 ", "🗾 ", or "🎌 " */
     }
     ul[data-sc-content="examples"] > li[lang="en"] {
-      list-style-type: "🇬🇧 " !important; /* hint: try "🗽 " */
+      list-style-type: "🇬🇧 " !important; /* hint: try "🗽 ", or "🌎 " */
     }
     ```
 
