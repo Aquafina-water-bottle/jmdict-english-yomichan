@@ -2,7 +2,7 @@
 
 This simply contains a Yomichan dictionary version of `JMdict (English)`
 from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project)
-(from file `JMdict_e` and `JMdict_e_examp`),
+(from files `JMdict_e` and `JMdict_e_examp`),
 compiled using [yomichan-import](https://github.com/FooSoft/yomichan-import).
 
 This repository exists to simply give people a more up-to-date version of this dictionary,
@@ -54,7 +54,7 @@ In the future, I plan on writing something to automatically re-compile this dict
       list-style-type: "📝 " !important;
     }
     ul[data-sc-content="antonyms"] {
-      list-style-type: "🔄 " !important; /* hint: try "↔️  */
+      list-style-type: "🔄 " !important; /* hint: try "↔️ " */
     }
     ul[data-sc-content="references"] {
       list-style-type: "➡️ " !important;
