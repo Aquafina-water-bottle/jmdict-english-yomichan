@@ -4,6 +4,7 @@ This simply contains a Yomichan dictionary version of `JMdict (English)`
 from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project)
 (from files `JMdict_e` and `JMdict_e_examp`),
 compiled using [yomichan-import](https://github.com/FooSoft/yomichan-import).
+(Disclaimer: I did not make any of these tools.)
 
 This repository exists to simply give people a more up-to-date version of this dictionary,
 for people who don't want to compile the dictionary themselves.
