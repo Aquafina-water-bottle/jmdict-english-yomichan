@@ -1,3 +1,11 @@
+# NEWEST VERSION: https://github.com/themoeway/local-audio-yomichan
+
+# WARNING: BELOW ARE LEGACY INSTRUCTIONS
+The instructions below, as well as the files found in this folder, are now considered legacy,
+and will *not* be maintained. Please see the link above if you want the local audio server setup.
+
+
+---
 
 # Local Audio Server for Yomichan
 
