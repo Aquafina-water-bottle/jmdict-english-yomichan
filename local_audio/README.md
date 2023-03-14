@@ -1,4 +1,4 @@
-# NEWEST VERSION: https://github.com/Aquafina-water-bottle/local-audio-yomichan
+# NEWEST VERSION: https://github.com/themoeway/local-audio-yomichan
 
 # WARNING: BELOW ARE LEGACY INSTRUCTIONS
 The instructions below, as well as the files found in this folder, are now considered legacy,
