@@ -1,6 +1,6 @@
 # JMdict for Yomichan
 
-This simply contains a Yomichan dictionary version of `JMdict (English)`
+This simply contains various versions of JMdict Yomichan dictionaries
 from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project)
 (from files `JMdict_e` and `JMdict_e_examp`),
 compiled using [yomichan-import](https://github.com/FooSoft/yomichan-import).
@@ -13,7 +13,7 @@ compared to older versions, so I would recommend updating this dictionary every 
 
 [**(DOWNLOAD UNDER RELEASES)**](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases)
 
-To see your current version of `JMdict (English)`,
+To see your current version of JMdict,
 hover over this entry:
 > ＪＭｄｉｃｔ
 
@@ -36,7 +36,7 @@ all of the following sources provide relatively older versions of JMdict:
 In the future, I plan on writing something to automatically re-compile this dictionary daily / weekly.
 -->
 
-## `jmdict_english_extra` Usage Notes
+## "JMdict English Extra" Usage Notes
 * For Windows users with a Chromium based browser (i.e. Google Chrome, Opera, Microsoft Edge, etc.),
     some emojis will not properly show (i.e. the flags).
     You can instead customize the emojis using the following CSS
