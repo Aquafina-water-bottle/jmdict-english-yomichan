@@ -1,4 +1,4 @@
-# JMdict (English) for Yomichan
+# JMdict for Yomichan
 
 This simply contains a Yomichan dictionary version of `JMdict (English)`
 from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project)
@@ -11,26 +11,30 @@ for people who don't want to compile the dictionary themselves.
 A more up-to-date version of JMdict usually provides better definitions and coverage
 compared to older versions, so I would recommend updating this dictionary every few months.
 
-There are now two versions:
-* `jmdict_english`: The default version.
-* `jmdict_english_extra`: Contains a lot of extra information not included in the default version,
-    including alternate forms, antonyms, and example sentences.
-    See [here](https://github.com/FooSoft/yomichan-import/pull/40) for more info.
-    (Huge thanks to `stephenmk` for making this!)
-
-    Note that this version will take considerably longer to import compared to the default version.
-
-Additionally, as of writing this (2022/09/20),
-all of the following sources provide relatively older versions of JMdict:
-- Matt's Yomichan video (Exact version not included, but likely before 2021)
-- TMW's Google Drive folder (2021-01-01)
-- Yomichan README (2021-01-01)
+[**(DOWNLOAD UNDER RELEASES)**](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases)
 
 To see your current version of `JMdict (English)`,
 hover over this entry:
 > ＪＭｄｉｃｔ
 
+## JMdict (English)
+For JMdict English users, there are a few versions available:
+
+* `jmdict_english`: The default version.
+* `jmdict_english_extra`: Contains a lot of extra information not included in the default version,
+    including alternate forms and antonyms
+* `jmdict_english_extra_with_examples`: Contains the above and extra sentences.
+    **You likely want to be using this one**.
+
+> **Note**: The extra versions will take considerably longer to import compared to the default version.
+
+<!--
+Additionally, as of writing this (2022/09/20),
+all of the following sources provide relatively older versions of JMdict:
+- Matt's Yomichan video (Exact version not included, but likely before 2021)
+- Yomichan README (2021-01-01)
 In the future, I plan on writing something to automatically re-compile this dictionary daily / weekly.
+-->
 
 ## `jmdict_english_extra` Usage Notes
 * For Windows users with a Chromium based browser (i.e. Google Chrome, Opera, Microsoft Edge, etc.),
@@ -78,10 +82,10 @@ In the future, I plan on writing something to automatically re-compile this dict
       list-style-type: circle !important;
     }
     ul[data-sc-content="infoGlossary"] {
-      list-style-type: "ⓘ  " !important;
+      list-style-type: "◆ " !important; /* matches closer with monolingual dictionaries. If you want a symbol, try "ⓘ  " */
     }
     ul[data-sc-content="sourceLanguages"] {
-      list-style-type: "原始: " !important;
+      list-style-type: "語源: " !important;
     }
     ul[data-sc-content="notes"] {
       list-style-type: "メモ: " !important;
@@ -93,10 +97,7 @@ In the future, I plan on writing something to automatically re-compile this dict
       list-style-type: "↪  " !important;
     }
     ul[data-sc-content="examples"] {
-      list-style-type: "日本: " !important;
-    }
-    ul[data-sc-content="examples"] > li[lang="en"] {
-      list-style-type: "英: " !important;
+      list-style-type: "例文: " !important;
     }
 
     ol[data-count="1"].definition-list ul[data-sc-content="examples"],
