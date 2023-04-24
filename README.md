@@ -2,7 +2,7 @@
 
 This simply contains various versions of JMdict Yomichan dictionaries
 from the [main website](https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project)
-(from files `JMdict_e` and `JMdict_e_examp`),
+(from files `JMdict`, `JMdict_e_examp`, `JMnedict.xml`, etc.),
 compiled using [yomichan-import](https://github.com/FooSoft/yomichan-import).
 (Disclaimer: I did not make any of these tools.)
 
@@ -11,12 +11,42 @@ for people who don't want to compile the dictionary themselves.
 A more up-to-date version of JMdict usually provides better definitions and coverage
 compared to older versions, so I would recommend updating this dictionary every few months.
 
-[**(DOWNLOAD UNDER RELEASES)**](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases)
-
 To see your current version of JMdict,
 hover over this entry:
 > ＪＭｄｉｃｔ
 
+## Downloads
+
+* **[JMdict (English)](https://www.edrdg.org/jmdict/edict_doc.html)**
+    * [jmdict_english_extra_with_examples.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_english_extra_with_examples.zip):
+        Contains extra information (such as alternate forms and antonyms), as well as example sentences.
+        **This is the recommended version of JMdict (English)**.
+    * [jmdict_english_extra.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_english_extra.zip):
+        Contains all the extra information, without example sentences.
+    * [jmdict_english.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_english.zip):
+        The original version, with no extra information or sentences.
+* **[JMdict (Other languages)](https://www.edrdg.org/jmdict/edict_doc.html)**
+    * [jmdict_dutch.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_dutch.zip)
+    * [jmdict_french.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_french.zip)
+    * [jmdict_german.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_german.zip)
+    * [jmdict_hungarian.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_hungarian.zip)
+    * [jmdict_russian.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_russian.zip)
+    * [jmdict_slovenian.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_slovenian.zip)
+    * [jmdict_spanish.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_spanish.zip)
+    * [jmdict_swedish.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_swedish.zip)
+* **[JMnedict](https://www.edrdg.org/enamdict/enamdict_doc.html)** (Japanese names)
+    * [jmnedict.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmnedict.zip)
+* **[KANJIDIC](http://nihongo.monash.edu/kanjidic2/index.html)** (Japanese kanji)
+    * [kanjidic_english.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_english.zip)
+    * [kanjidic_french.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_french.zip)
+    * [kanjidic_portuguese.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_portuguese.zip)
+    * [kanjidic_spanish.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_spanish.zip)
+* **[JMdict Forms](https://www.edrdg.org/jmdict/edict_doc.html)** (Japanese names)
+    * [jmdict_forms.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_forms.zip)
+
+
+
+<!--
 ## JMdict (English)
 For JMdict English users, there are a few versions available:
 
@@ -26,7 +56,9 @@ For JMdict English users, there are a few versions available:
 * `jmdict_english_extra_with_examples`: Contains the above and extra sentences.
     **You likely want to be using this one**.
 
+
 > **Note**: The extra versions will take considerably longer to import compared to the default version.
+-->
 
 <!--
 Additionally, as of writing this (2022/09/20),
