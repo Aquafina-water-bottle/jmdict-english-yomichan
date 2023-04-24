@@ -41,7 +41,7 @@ hover over this entry:
     * [kanjidic_french.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_french.zip)
     * [kanjidic_portuguese.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_portuguese.zip)
     * [kanjidic_spanish.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_kanjidic_spanish.zip)
-* **[JMdict Forms](https://www.edrdg.org/jmdict/edict_doc.html)** (Japanese names)
+* **[JMdict Forms](https://www.edrdg.org/jmdict/edict_doc.html)** (Alternate forms of Japanese words)
     * [jmdict_forms.zip](https://github.com/Aquafina-water-bottle/jmdict-english-yomichan/releases/download/2023%2F04%2F15/2023-04-15_jmdict_forms.zip)
 
 
